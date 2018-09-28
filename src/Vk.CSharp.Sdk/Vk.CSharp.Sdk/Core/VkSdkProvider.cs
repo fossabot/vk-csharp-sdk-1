@@ -45,7 +45,7 @@ namespace Vk.CSharp.Sdk.Core
             return new Ads(
                 new RequestExecutionWrapper(
                     new Browser(),
-                    new AccountMapper().Mapper
+                    new AdsMapper().Mapper
                 ),
                 new RequestBuildDirector<Ads>(
                     new RequestBuilder<Ads>()
@@ -58,7 +58,7 @@ namespace Vk.CSharp.Sdk.Core
             return new Apps(
                 new RequestExecutionWrapper(
                     new Browser(),
-                    new AccountMapper().Mapper
+                    new AppsMapper().Mapper
                 ),
                 new RequestBuildDirector<Apps>(
                     new RequestBuilder<Apps>()
