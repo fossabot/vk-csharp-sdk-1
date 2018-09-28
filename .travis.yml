@@ -1,0 +1,7 @@
+language: csharp
+solution: src/Vk.CSharp.Sdk/Vk.CSharp.Sdk.sln
+mono: none
+dotnet: 2.1.402
+script:
+ - cd src/Vk.CSharp.Sdk
+ - dotnet restore
