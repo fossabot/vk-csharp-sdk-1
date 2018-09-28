@@ -1,0 +1,16 @@
+﻿https://oauth.vk.com/authorize
+
+	client_id = 6665781
+	display = mobile
+	redirect_uri = https://oauth.vk.com/blank.html
+	scope = 140492255
+	response_type = token
+	v = 5.85
+
+https://oauth.vk.com/authorize?client_id=6665781&display=mobile&redirect_uri=https://oauth.vk.com/blank.html&scope=140492255&response_type=token&v=5.85
+
+	access_token = 1dcd5d0f370896462aa3d34f4bb35a1dad205f1251fb8db7fb5dc0aef37feaff4e3a75ee259f457ca75b9
+	expires_in = 86400
+	user_id = 249799333
+
+https://oauth.vk.com/blank.html#access_token={access_token}&expires_in={expires_in}&user_id={user_id}
