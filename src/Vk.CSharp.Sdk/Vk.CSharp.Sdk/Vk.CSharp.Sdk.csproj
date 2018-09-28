@@ -2,6 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Kulitsky Victor</Authors>
+    <Product />
+    <Company>pDopnex</Company>
+    <PackageProjectUrl>https://github.com/pDopnex/vk-csharp-sdk</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/pDopnex/vk-csharp-sdk/master/images/vk_logo.png</PackageIconUrl>
+    <PackageLicenseUrl>https://github.com/pDopnex/vk-csharp-sdk/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageTags>vk, sdk, api, vkontakte</PackageTags>
+    <RepositoryUrl>https://github.com/pDopnex/vk-csharp-sdk</RepositoryUrl>
+    <Description>Набор средств для взаимодействия с ВКонтакте.</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
