@@ -42,5 +42,10 @@ namespace Vk.CSharp.Sdk.Home
         /// Возвращает интерфейс для работы с рекламным кабинетом.
         /// </summary>
         IAds GetAds();
+
+        /// <summary>
+        /// Возвращает интерфейс для работы с приложениями.
+        /// </summary>
+        IApps GetApps();
     }
 }

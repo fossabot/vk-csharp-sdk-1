@@ -2,8 +2,6 @@
 using Vk.CSharp.Sdk.Enums;
 using Vk.CSharp.Sdk.Home;
 using Vk.CSharp.Sdk.Models;
-using Vk.CSharp.Sdk.Models.Account.Parameters;
-using Vk.CSharp.Sdk.Models.Ads.Parameters;
 
 namespace Vk.CSharp.Sdk.App.Source
 {
@@ -24,26 +22,10 @@ namespace Vk.CSharp.Sdk.App.Source
             VkSdkProvider.GetSame()
                 .Authorize(new AuthorizationData(AccessToken));
 
-            VkSdkProvider.GetSame()
-                .GetAccount()
-                .Ban(new ParametersBan());
-
-            VkSdkProvider.GetSame()
-                .GetAds()
-                .AddOfficeUsers(new ParametersAddOfficeUsers());
-
             Environment = VkSdkProvider.GetSame()
                 .GetEnvironment();
 
             Console.WriteLine(Environment.AccessToken);
-
-            VkSdkProvider.GetSame()
-                .Deauthorize();
-
-            Environment = VkSdkProvider.GetSame()
-                .GetEnvironment();
-
-            Console.WriteLine(string.IsNullOrWhiteSpace(Environment.AccessToken));
 
             Console.ReadKey();
         }

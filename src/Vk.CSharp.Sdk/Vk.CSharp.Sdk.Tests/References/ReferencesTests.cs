@@ -35,6 +35,7 @@ namespace Vk.CSharp.Sdk.Tests.References
             // Модули не хранят состояние.
             Assert.Same(newSdk.GetAccount(), sameSdk.GetAccount());
             Assert.Same(newSdk.GetAds(), sameSdk.GetAds());
+            Assert.Same(newSdk.GetApps(), sameSdk.GetApps());
         }
     }
 }

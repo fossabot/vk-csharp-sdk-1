@@ -13,7 +13,7 @@ namespace Vk.CSharp.Sdk.Core
     internal class VkSdk : IVkSdk
     {
         private VkSdkEnvironment Environment { get; }
-            = new VkSdkEnvironment(VkSdkProvider.GetCurrentVersion());
+            = new VkSdkEnvironment(VkSdkProvider.GetCurrentVkApiVersion());
 
         public VkApiVersion GetCurrentVkApiVersion()
         {
@@ -46,5 +46,6 @@ namespace Vk.CSharp.Sdk.Core
 
         public IAccount GetAccount() => VkSdkProvider.GetAccount();
         public IAds GetAds() => VkSdkProvider.GetAds();
+        public IApps GetApps() => VkSdkProvider.GetApps();
     }
 }

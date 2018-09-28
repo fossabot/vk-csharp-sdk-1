@@ -19,7 +19,7 @@ namespace Vk.CSharp.Sdk.Core.Builders
 
         protected string Version { get; set; } =
             VkSdkProvider
-                .GetCurrentVersion()
+                .GetCurrentVkApiVersion()
                 .GetStringValue();
 
         protected StringBuilder Request { get; set; } = new StringBuilder();

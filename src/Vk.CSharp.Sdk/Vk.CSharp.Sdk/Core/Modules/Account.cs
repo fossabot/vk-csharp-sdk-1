@@ -1,5 +1,7 @@
-﻿using Vk.CSharp.Sdk.Core.Mappers.Interfaces;
+﻿using Vk.CSharp.Sdk.Core.Directors.Interfaces;
+using Vk.CSharp.Sdk.Core.Mappers.Interfaces;
 using Vk.CSharp.Sdk.Core.Modules.Base;
+using Vk.CSharp.Sdk.Core.Wrappers.Interfaces;
 using Vk.CSharp.Sdk.Models.Account.Parameters;
 using Vk.CSharp.Sdk.Models.Account.Responses;
 using Vk.CSharp.Sdk.Modules;
@@ -8,9 +10,11 @@ namespace Vk.CSharp.Sdk.Core.Modules
 {
     // Ссылка: https://vk.com/dev/account
 
-    internal class Account : Module, IAccount
+    internal class Account : Module<Account>, IAccount
     {
-        public Account(IModuleMapper mapper) : base(mapper) { }
+        public Account(IRequestExecutionWrapper wrapper, IRequestBuildDirector<Account> director)
+            : base(wrapper, director)
+        { }
 
         public ResponseBan Ban(ParametersBan parameters)
         {
